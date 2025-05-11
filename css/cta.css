@@ -1,0 +1,23 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 347px;
+    margin: 0;
+    padding: 0px 60px;
+    align-items: flex-start;
+    border-radius: 45px;
+    background: var(--grey);
+    gap: 26px;
+    position: relative;
+}
+
+.cta__desc {
+    max-width: 500px;
+}
+
+.cta__img {
+    max-width: 494px;
+    position: absolute;
+    right: 0px;
+}

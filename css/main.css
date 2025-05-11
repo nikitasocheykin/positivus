@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+a, abbr, address, b, bdo, big, blockquote, br, button, cite, code, del, dfn, em, i, ins, kbd, label, input, map, pre, q, samp, small, span, strong, sub, sup, textarea, time, tt, u, var, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--black);
+}
+
+header, main, footer {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 20px 35px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    
+    transition: all 300ms ease-in-out;
+}
+
+section {
+    margin-block: 70px;
+}
+
+.btn.btn--primary {
+    background-color: var(--black);
+    color: var(--bright);
+}
+
+.btn.btn--primary:hover {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+.btn.btn--secondary {
+    background-color: var(--primary);
+    color: var(--black);
+}
+.btn.btn--secondary:hover {
+    background-color: var(--black);
+    color: var(--bright);
+}
+
+.btn.btn--bordered {
+    border: 1px solid var(--dark, #191A23);
+    background: none;
+    color: var(--black);
+}
+
+.btn.btn--bordered:hover {
+    background-color: var(--black);
+    color: var(--bright);
+}
+
+
+.block-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 85px;
+}
+
+.block-header__headline {
+    background-color: var(--primary);
+    padding: 0 7px;
+    border-radius: 7px;
+}
+
+.block-header__desc {
+    max-width: 580px;
+}

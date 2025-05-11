@@ -1,0 +1,47 @@
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px 80px 100px;
+    border-radius: 45px;
+    background: var(--grey);
+    align-items: stretch;
+    gap: 25px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+input, textarea {
+    display: block;
+    padding: 18px 30px;
+    background-color: var(--bright);
+    border-radius: 14px;
+    border: 1px solid var(--black);
+    margin-top: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-us__form > * {
+    max-width: 556px;
+}
+
+.contact-us__cover {
+    height: 600px;
+    position: absolute;
+    right: -260px;
+    top: 0;
+}

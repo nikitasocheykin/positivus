@@ -1,0 +1,16 @@
+.first-screen__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-screen__img {
+    max-width: 600.462px;
+}
+
+.first-screen__texts {
+    display: flex;
+    max-width: 531px;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+}

@@ -1,0 +1,105 @@
+.working-process__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.working-process-card {
+    padding: 41px 60px;
+}
+
+.accordion {
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background: var(--grey);
+    box-shadow: 0px 5px 0px 0px #191A23;
+    overflow: hidden;
+    height: 168px;
+
+    transition: all 300ms ease-in-out;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__headtext {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--black);
+}
+
+.accordion__number {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion__headline {
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.accordion__icon {
+    width: 58px;
+    height: 58px;
+    background-color: var(--grey);
+    border-radius: 58px;
+    border: 1px solid var(--black);
+    margin-bottom: 50px;
+    position: relative;
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.accordion__icon:hover {
+    background-color: var(--primary);
+}
+
+.accordion__icon-line {
+    display: block;
+    height: 6px;
+    width: 18px;
+    background-color: var(--black);
+    position: absolute;
+    top: 25px;
+    left: 18px;
+}
+
+.accordion__icon-line:last-child {
+    transform: rotate(90deg);
+}
+
+.accordion__desc {
+    margin-top: 50px;
+}
+
+.accordion:hover {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #191A23;
+}
+
+.accordion.active {
+    background-color: var(--primary);
+    height: auto;
+}
+.accordion.active .accordion__icon {
+    background-color: var(--grey);
+}
+.accordion.active .accordion__icon:hover {
+    background-color: var(--primary);
+}
+.accordion.active .accordion__icon-line:last-child {
+    transform: rotate(0);
+}
