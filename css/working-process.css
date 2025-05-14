@@ -14,7 +14,7 @@
     background: var(--grey);
     box-shadow: 0px 5px 0px 0px #191A23;
     overflow: hidden;
-    height: 168px;
+    max-height: 168px;
 
     transition: all 300ms ease-in-out;
 }
@@ -61,6 +61,7 @@
 
     transition: all 300ms ease-in-out;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .accordion__icon:hover {
@@ -74,10 +75,11 @@
     background-color: var(--black);
     position: absolute;
     top: 25px;
-    left: 18px;
+    left: 20px;
 }
 
 .accordion__icon-line:last-child {
+    transition: all 300ms ease-in-out;
     transform: rotate(90deg);
 }
 
@@ -92,7 +94,7 @@
 
 .accordion.active {
     background-color: var(--primary);
-    height: auto;
+    max-height: 900px;
 }
 .accordion.active .accordion__icon {
     background-color: var(--grey);
@@ -102,4 +104,24 @@
 }
 .accordion.active .accordion__icon-line:last-child {
     transform: rotate(0);
+}
+
+@media screen and (max-width: 768px) {
+    .working-process-card {
+        padding: 20px 30px 50px;
+    }
+    .accordion__number {
+        display: none;
+    }
+    .accordion__headline {
+        display: flex;
+        min-height: 115.5px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .accordion__headline {
+        font-size: 24px;
+    }
 }

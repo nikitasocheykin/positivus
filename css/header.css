@@ -3,7 +3,15 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 66px;
+    margin-top: 30px;
+
+    gap: 40px;
+    padding: 20px;
+
+    position: sticky;
+    top: 0;
+    background-color: var(--bright);
+    z-index: 150;
 }
 
 .nav-list {
@@ -20,4 +28,94 @@ header {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    transition: all 300ms ease-in-out;
+}
+
+.header__burger:hover .burger-line:first-child {
+    transform: translateY(13px) rotate(-90deg);
+}
+.header__burger:hover .burger-line:last-child {
+    transform: translateY(-13px) rotate(180deg);
+}
+
+.header__burger.active .burger-line:first-child {
+    transform: translateY(13px) rotate(-45deg);
+}
+.header__burger.active .burger-line:nth-child(2) {
+    transform: rotate(45deg);
+}
+.header__burger.active .burger-line:last-child {
+    transform: translateY(-13px) rotate(45deg);
+}
+
+.header__burger {
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    header {
+        margin-top: 0;
+        border-bottom: 1px solid var(--black);
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+        position: fixed;
+        top: 80px;  
+        left: 0;
+        right: 0;
+        padding: 0 50px 0;
+
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+
+        border-radius: 0 0 35px 35px;
+        border: 0px solid var(--black);
+
+        background-color: var(--bright);
+        box-shadow: 0 5px 0 var(--black);
+
+        z-index: 100;
+        transition: all 300ms ease-in-out;
+    }
+
+    .nav-list.active {
+        padding: 50px 50px 50px;
+        height: auto;
+        max-height: 100vh;
+        border: 1px solid var(--black);
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .header__logo {
+        max-width: 120px;
+    }
 }

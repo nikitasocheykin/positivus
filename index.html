@@ -16,9 +16,14 @@
                 <li class="nav-list__item"><a href="#" class="nav-list__link">Use Cases</a></li>
                 <li class="nav-list__item"><a href="#" class="nav-list__link">Pricing</a></li>
                 <li class="nav-list__item"><a href="#" class="nav-list__link">Blog</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link btn btn--bordered">Request a quote</a></li>
+                <li class="nav-list__item"><a href="#popup" class="nav-list__link btn btn--bordered">Request a quote</a></li>
             </ul>
         </nav>
+        <div class="header__burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
     </header>
     <main>
         <section class="first-screen">
@@ -26,7 +31,7 @@
                 <div class="first-screen__texts">
                     <h1 class="first-screen__headline">Navigating the digital landscape for success</h1>
                     <p class="first-screen__desc">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                    <a href="" class="btn btn--primary">Book a consultation</a>
+                    <a href="#popup" class="btn btn--primary">Book a consultation</a>
                 </div>
                 <img src="/img/illustration.png" alt="" class="first-screen__img">
             </div>
@@ -92,7 +97,7 @@
         <section class="cta">
             <h3 class="cta__headline">Let’s make things happen</h3>
             <p class="cta__desc">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-            <a href="" class="cta__btn btn btn--primary">Get your free proposal</a>
+            <a href="#popup" class="cta__btn btn btn--primary">Get your free proposal</a>
             <img src="/img/ill-8.png" alt="" class="cta__img">
         </section>
         <section class="working-process">
@@ -186,8 +191,14 @@
                 <h2 class="block-header__headline">Team</h2>
                 <p class="block-header__desc">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
             </div>
+            <div class="team__selectors">
+                <button class="btn btn--bordered" data-selector="all">All</button>
+                <button class="btn btn--bordered" data-selector="seo">SEO</button>
+                <button class="btn btn--bordered" data-selector="marketing">Marketing</button>
+                <button class="btn btn--bordered" data-selector="content">Content</button>
+            </div>
             <div class="team__cards">
-                <div class="team-card">
+                <div class="team-card" data-selector-seo data-selector-content data-selector-marketing>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture.png" alt="" class="team-card__img">
@@ -200,7 +211,7 @@
                     </div>
                     <p class="team-card__about">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-selector-marketing>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture-2.png" alt="" class="team-card__img">
@@ -213,7 +224,7 @@
                     </div>
                     <p class="team-card__about">7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-selector-seo>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture-3.png" alt="" class="team-card__img">
@@ -226,7 +237,7 @@
                     </div>
                     <p class="team-card__about">5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</p>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-selector-content data-selector-marketing>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture-4.png" alt="" class="team-card__img">
@@ -239,7 +250,7 @@
                     </div>
                     <p class="team-card__about">3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-selector-content>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture-5.png" alt="" class="team-card__img">
@@ -252,7 +263,7 @@
                     </div>
                     <p class="team-card__about">4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
                 </div>
-                <div class="team-card">
+                <div class="team-card" data-selector-content>
                     <div class="team-card__header">
                         <div class="team-card__emp">
                             <img src="img/Picture-6.png" alt="" class="team-card__img">
@@ -265,7 +276,6 @@
                     </div>
                     <p class="team-card__about">2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries</p>
                 </div>
-                <a href="" class="btn btn--primary">Load More</a>
             </div>
         </section>
         <section class="testimonials">
@@ -275,6 +285,24 @@
             </div>
             <div class="testimonials__content">
                 <div class="testimonials__cards">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <h4 class="testimonial-card__name">John Smith</h4>
+                            <p class="testimonial-card__position">Marketing Director at XYZ Corp</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <h4 class="testimonial-card__name">John Smith</h4>
+                            <p class="testimonial-card__position">Marketing Director at XYZ Corp</p>
+                        </div>
+                    </div>
                     <div class="testimonial-card">
                         <div class="testimonial-card__content">
                             <p class="testimonial-card__text">"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
@@ -318,29 +346,26 @@
                 </nav>
             </div>
         </section>
-        <section class="contact-us">
-            <div class="contact-us__block-header block-header">
-                <h2 class="block-header__headline">Contact Us</h2>
-                <p class="block-header__desc">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
-            </div>
-            <form action="" class="contact-us__form">
-                <label class="contact-us__input-lb">
-                    Name
-                    <input type="email" name="" class="contact-us__input" placeholder="Name">
-                </label>
-                <label class="contact-us__input-lb">
-                    Email *
-                    <input type="email" name="" class="contact-us__input" placeholder="Email">
-                </label>
-                <label class="contact-us__message-lb">
-                    Message *
-                    <textarea name="" class="contact-us__message" placeholder="Message"></textarea>
-                </label>
-                <button class="contact-us__submit btn btn--primary" type="submit">Send Message</button>
-                <img src="/img/Illustration-8.png" alt="" class="contact-us__cover">
-            </form>
-        </section>
     </main>
+    <section class="contact-us popup">
+        <form action="" class="contact-us__form">
+            <label class="contact-us__input-lb">
+                Name
+                <input type="email" name="" class="contact-us__input" placeholder="Name">
+            </label>
+            <label class="contact-us__input-lb">
+                Email *
+                <input type="email" name="" class="contact-us__input" placeholder="Email">
+            </label>
+            <label class="contact-us__message-lb">
+                Message *
+                <textarea name="" class="contact-us__message" placeholder="Message"></textarea>
+            </label>
+            <button class="contact-us__submit btn btn--primary" type="submit">Send Message</button>
+            <img src="/img/Illustration-8.png" alt="" class="contact-us__cover">
+        </form>
+        <img src="/img/close.svg" alt="" class="popup__close">
+    </section>
     <footer>
         <nav class="footer__nav">
             <img src="/img/Logo Dark.svg" alt="" class="footer__logo">
@@ -377,5 +402,10 @@
             <a href="" class="copyright__privacy">Privacy Policy</a>
         </div>
     </footer>
+    <script src="js/accordion.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

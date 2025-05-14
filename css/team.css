@@ -1,6 +1,14 @@
-.team__cards {
+.team__selectors {
     display: flex;
+    gap: 15px;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.team__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 40px;
 }
 
@@ -45,4 +53,24 @@
 .team-card__about {
     border-top: 1px solid var(--black);
     padding-top: 28px;
+}
+
+@media screen and (max-width: 1140px) {
+    .team__cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team-card {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .team__cards {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 343px) {
+    .team-card__emp {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

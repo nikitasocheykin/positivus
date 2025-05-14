@@ -21,3 +21,18 @@
     position: absolute;
     right: 0px;
 }
+
+@media screen and (max-width: 1140px) {
+    .cta__img {
+        right: -200px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .cta__img {
+        display: none;
+    }
+    .cta {
+        height: auto;
+        padding: 30px;
+    }
+}
